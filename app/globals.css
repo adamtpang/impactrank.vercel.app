@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #f5f3ed;
+  --color-ink: #202d28;
+  --color-forest: #284d3f;
+  --color-sage: #8a9b87;
+  --color-line: #d9dcd3;
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --paper: #f5f3ed;
+  --ink: #202d28;
+  --muted: #69736c;
+  --line: #d9dcd3;
+  --forest: #284d3f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #d9e2d3;
+  color: var(--forest);
+}
+
+a,
+button,
+select,
+input,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+select {
+  outline-offset: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #567b64;
+}
+
+button,
+summary,
+select {
+  cursor: pointer;
+}
+
+.serif {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+.hero-grid {
+  background-image: linear-gradient(
+    to right,
+    rgba(62, 81, 69, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: calc(100% / 6) 100%;
+}
+
+.opportunity-row {
+  transition: background-color 160ms ease;
+}
+
+.opportunity-row:hover {
+  background-color: rgba(235, 237, 229, 0.55);
+}
+
+.opportunity-row[open] {
+  background-color: #f0f1e9;
+}
+
+.opportunity-row summary::-webkit-details-marker {
+  display: none;
+}
+
+.opportunity-row[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  transition: transform 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
