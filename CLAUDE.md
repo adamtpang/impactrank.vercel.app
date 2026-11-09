@@ -1,5 +1,7 @@
 # ImpactRank
 
+For continuation, read `HANDOFF.md` for product context and outstanding diligence. `START_HERE.md` contains Adam's single setup and continuation prompt. Preserve the existing repository and deployment chain; do not post to X or publish new changes unless asked.
+
 Starter: official Next.js create-next-app App Router + Tailwind (MIT).
 Source: https://github.com/vercel/next.js/tree/canary/packages/create-next-app/templates/app-tw
 

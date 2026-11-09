@@ -2,6 +2,10 @@
 
 A static Next.js App Router index of philanthropic opportunities. Public sources inform editorial scores; these are not independently validated funding recommendations.
 
+## Resume development with an agent
+
+Read [START_HERE.md](START_HERE.md) for the single handoff prompt and [HANDOFF.md](HANDOFF.md) for the complete project state, research caveats, and remaining work.
+
 ## Run locally
 
 Requires Node.js 22.6+ (Node 24 recommended).
